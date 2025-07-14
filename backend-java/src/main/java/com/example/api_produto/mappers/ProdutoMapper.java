@@ -2,8 +2,9 @@ package com.example.api_produto.mappers;
 
 import com.example.api_produto.dtos.ProdutoDto;
 import com.example.api_produto.entities.Produto;
+import org.springframework.stereotype.Component;
 
-
+@Component
 public class ProdutoMapper {
 
     public ProdutoDto toDto(Produto produto) {
