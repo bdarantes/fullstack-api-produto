@@ -11,20 +11,9 @@ import java.math.BigDecimal;
 public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id;
     private String descricao;
     private BigDecimal valor;
-
-    public Produto() {
-
-    }
-
-    public Produto(Long id, String descricao, BigDecimal valor) {
-        this.id = id;
-        this.descricao = descricao;
-        this.valor = valor;
-    }
 
     public Long getId() {
         return id;
