@@ -1,0 +1,36 @@
+# Backend Java (Spring Boot)
+backend-java/target/
+backend-java/.idea/
+backend-java/.classpath
+backend-java/.project
+backend-java/.settings/
+backend-java/.vscode/
+backend-java/.mvn/
+backend-java/logs/
+backend-java/*.log
+
+# IDEs comuns
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+
+# Maven
+backend-java/pom.xml.tag
+backend-java/pom.xml.releaseBackup
+backend-java/pom.xml.versionsBackup
+backend-java/log/
+
+# Frontend (Node.js / npm / yarn)
+frontend/node_modules/
+
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.cache/
+frontend/.parcel-cache/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
