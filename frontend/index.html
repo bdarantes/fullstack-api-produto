@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Produtos</h1>
+    <form id="prodtoForm">
+        <input type="text" id="descricao" placeholder="Descrição" required>
+        <input type="number" id="valor" placeholder="Valor" step="0.01" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <h2>Lista de Produtos</h2>
+    <ul id="listarProdutos"></ul>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
