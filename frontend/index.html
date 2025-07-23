@@ -3,19 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Produtos</title>
+    <title>Sistema de Produtos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Produtos</h1>
-    <form id="prodtoForm">
-        <input type="text" id="descricao" placeholder="Descrição" required>
-        <input type="number" id="valor" placeholder="Valor" step="0.01" required>
-        <button type="submit">Cadastrar</button>
-    </form>
+    <header>
+        <nav>
+            <button onclick="mostrarSecao('cadastrar')">Cadastrar</button>
+            <button onclick="mostrarSecao('lista')">Listar Todos</button>
+            <button onclick="mostrarSecao('buscar')">Buscar por Id</button>
+            <div id="resultado-busca"></div>
+        </nav>
+    </header>
 
-    <h2>Lista de Produtos</h2>
-    <ul id="listarProdutos"></ul>
+    <main>
+        <section id="cadastrar" class="secao">
+            <h2>Cadastro de Produto</h2>
+            <form id="produto-form">
+                 <input type="text" id="descricao" placeholder="Descrição" required>
+                 <input type="number" id="valor" placeholder="Valor" step="0.01" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+        <section id="lista" class="secao" style="display: none;">
+            <h2>Lista de Produtos</h2>
+            <ul id="lista-produtos"></ul>
+        </section>
+
+        <section id="buscar" class="secao" style="display: none;">
+            <h2>Buscar Produto por ID</h2>
+            <input type="number" id="buscar-id" placeholder="ID do produto">
+            <button onclick="buscarProdutoPorId()">Buscar</button>
+        </section>
+
+    </main>
+
+    
     
     <script src="script.js"></script>
     
