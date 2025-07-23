@@ -12,6 +12,7 @@ public class ProdutoMapper {
             return null;
         }
         ProdutoDto dto = new ProdutoDto();
+        dto.setId(produto.getId());
         dto.setDescricao(produto.getDescricao());
         dto.setValor(produto.getValor());
         return dto;
@@ -23,6 +24,7 @@ public class ProdutoMapper {
             return null;
         }
         Produto produto = new Produto();
+        produto.setId(produtoDto.getId());
         produto.setDescricao(produtoDto.getDescricao());
         produto.setValor(produtoDto.getValor());
         return produto;
